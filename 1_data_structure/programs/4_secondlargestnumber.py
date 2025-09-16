@@ -1,4 +1,4 @@
-a,b,c = map (int, input().split( ))
+a,b,c = map (int, input("enter the numbers one by one").split( ))
 if ( (a>b) and (a>c) ):
     a = 0
 elif ( (b>a) and (b>c) ):
