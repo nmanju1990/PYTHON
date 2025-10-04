@@ -1,0 +1,15 @@
+m = int(input("Enter No of Rows: "))
+n = int(input("Enter No of Columns: "))
+mat = []
+for i in range(m):
+    x = list(map(int,input().split()))
+    mat.append(x)
+res = []
+for i in range(m):
+    res.append([0]*n)
+for i in range(m):
+    for j in range(n):
+        res[i][j] = mat[j][i]
+print("The Transpose of the Matrix is: ")
+for x in res:
+    print(*x)

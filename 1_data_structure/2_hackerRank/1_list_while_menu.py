@@ -21,7 +21,12 @@ if __name__ == '__main__':
         args = command[1:]
 
         if operation == "insert":
-            i, e = map(int, args)
+            #i, e = map(int, args)
+            # insert i e → command[1] = i, command[2] = e
+            i = int(input("enter your position:"))
+            e = input("enter your element value:")
+            my_list.insert(i, e)
+            print(my_list)
             my_list.insert(i, e)
         elif operation == "print":
             print("Current list:", my_list)

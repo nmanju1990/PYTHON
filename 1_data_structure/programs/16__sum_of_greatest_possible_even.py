@@ -7,7 +7,7 @@ for x in range (1,b+1):
     if b % x == 0:
         #print(x)
          list_k.append(x)
-    
+print(list_k)    
 
 #print(list_k)
 # loop through the list
